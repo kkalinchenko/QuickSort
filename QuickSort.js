@@ -1,6 +1,6 @@
 var a = [5, 8, 13, 11, 7, 1, 1, 7, 5, 7, 12];
 
-function QuickSort(array, begin, end){
+function QuickSort (array, begin, end) {
   
   var oldBegin = begin,
   oldEnd = end,
@@ -38,7 +38,7 @@ function QuickSort(array, begin, end){
   
 }
 
-function swap(arr, a, b){
+function swap (arr, a, b) {
   var tmp = arr[a];
   arr[a] = arr[b];
   arr[b] = tmp;
@@ -50,7 +50,7 @@ console.log(QuickSort(a, 0, a.length-1));
 
 var a = [5, 8, 13, 11, 7, 1, 1, 7, 5, 7, 12];
 
-function QuickSort(arr, begin, end){
+function QuickSort (arr, begin, end) {
   var oldBegin = begin,
   oldEnd = end,
   direction = 1;
@@ -73,13 +73,11 @@ function QuickSort(arr, begin, end){
   if((begin - oldBegin) > 1) QuickSort(arr, oldBegin, begin-1);
   if((oldEnd - end) > 1) QuickSort(arr, end+1, oldEnd);
   
-  
-  
   return arr;
   
 }
 
-function swap(arr, begin, end){
+function swap (arr, begin, end) {
   var tmp = arr[begin];
   arr[begin] = arr[end];
   arr[end] = tmp;
